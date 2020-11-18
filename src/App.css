@@ -1,0 +1,151 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 2rem;
+}
+
+.score,
+.quiz_ended {
+  font-size: 24px;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background:white;
+  color: #000000;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  margin: 5px 0px
+}
+
+.start,
+.next_question {
+  cursor: pointer;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  margin: 5px 0;
+}
+
+.qCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  /* border: 5px solid rgb(0, 0, 0); */
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 1rem;
+  margin: 0rem 30rem;
+  width: 100%;
+  background: white;
+  color: #000000;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  user-select: none;
+  border-radius: 10px;
+  box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  background: linear-gradient(to right, #1488cc, #2b32b2);
+  color: white;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  border: 2px solid white;
+}
+.btn_correct {
+  border: 2px solid white;
+  background: linear-gradient(90deg, #56ffa4, #59bc86);
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  user-select: none;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+.btn_wrong {
+  background: linear-gradient(90deg, #ff5656, #c16868);
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  user-select: none;
+  color: white;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .qCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* border: 5px solid rgb(0, 0, 0); */
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-size: 1rem;
+    margin: 0rem 2rem;
+    width: 80%;
+    background: white;
+    color: #000000;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .qCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* border: 5px solid rgb(0, 0, 0); */
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 1rem;
+    margin: 0rem 2rem;
+    width: 80%;
+    background: white;
+    color: #000000;
+  }
+}
